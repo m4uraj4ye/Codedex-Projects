@@ -1,0 +1,44 @@
+print("===================")
+print("Area Calculator 📐 ")
+print("===================")
+
+print("\n1) Triangle")
+print("\n2) Rectangle")
+print("\n3) Square")
+print("\n4) Circle")
+print("\n5) Quit")
+
+def circle():
+  radius = int(input("Radius: "))
+  area = 3.14 * (radius * radius)
+  print(f"\nThe area is {area}!")
+
+def triangle():
+  base = int(input("Base: "))
+  height = int(input("Height: "))
+  area = (base * height) / 2
+  print(f"\nThe area is {area}!")
+
+def rectangle():
+  base = int(input("Base: "))
+  height = int(input("Height"))
+  area = base * height
+  print(f"\nThe area is {area}!")
+
+def square():
+  side = int(input("Side: "))
+  area = side * side
+  print(f"\nThe area is {area}!")
+
+shape = int(input("\nWhich shape: "))
+if shape == 1:
+  triangle()
+elif shape == 2:
+  rectangle()
+elif shape == 3:
+  square()
+elif shape == 4:
+  circle()
+else:
+  print("\nGoodbye!")
+
