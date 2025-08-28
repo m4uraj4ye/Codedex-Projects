@@ -15,69 +15,69 @@ zodiac_list = [
     ]
 
 def zodiac_checker():
-    birth_month = int(input("Which number month were you born in?: "))
-    birth_date = int(input("What date were you born on?: "))  
+    birth_month = int(input("\nWhich number month were you born in?: "))
+    birth_date = int(input("\nWhat date were you born on?: "))  
     # nested if/elif/else statements to calculate the zodiac sign
     if birth_month == 1:
         if birth_date >= 21:
-            zodiac = "aquarius"
+            zodiac = "Aquarius"
         elif birth_date < 21:
-            zodiac = "capricorn"   
+            zodiac = "Capricorn"   
     elif birth_month == 2:
         if birth_date >= 19:
-            zodiac = "pisces"
+            zodiac = "Pisces"
         elif birth_date < 19:
-            zodiac = "aquarius"
+            zodiac = "Aquarius"
     elif birth_month == 3:
         if birth_date >= 21:
-            zodiac = "aries"
+            zodiac = "Aries"
         elif birth_date < 21:
-            zodiac = "pisces"
+            zodiac = "Pisces"
     elif birth_month == 4:
         if birth_date >= 20:
-            zodiac = "taurus"
+            zodiac = "Taurus"
         elif birth_date < 20:
-            zodiac = "aries"
+            zodiac = "Aries"
     elif birth_month == 5:
         if birth_date >= 21:
-            zodiac = "gemini"
+            zodiac = "Gemini"
         elif birth_date < 21:
-            zodiac = "taurus"
+            zodiac = "Taurus"
     elif birth_month == 6:
         if birth_date >= 21:
-            zodiac = "cancer"
+            zodiac = "Cancer"
         elif birth_date < 21:
-            zodiac = "gemini"
+            zodiac = "Gemini"
     elif birth_month == 7:
         if birth_date >= 23:
-            zodiac = "leo"
+            zodiac = "Leo"
         elif birth_date < 22:
-            zodiac = "cancer"
+            zodiac = "Cancer"
     elif birth_month == 8:
         if birth_date >= 23:
-            zodiac = "virgo"
+            zodiac = "Virgo"
         elif birth_date < 23:
-            zodiac = "leo"
+            zodiac = "Leo"
     elif birth_month == 9:
         if birth_date >= 23:
-            zodiac = "libra"
+            zodiac = "Libra"
         elif birth_date < 23:
-            zodiac = "virgo"
+            zodiac = "Virgo"
     elif birth_month == 10:
         if birth_date >= 23:
-            zodiac = "scorpio"
+            zodiac = "Scorpio"
         elif birth_date < 23:
-            zodiac = "libra"
+            zodiac = "Libra"
     elif birth_month == 11:
         if birth_date >= 22:
-            zodiac = "sagittarius"
+            zodiac = "Sagittarius"
         elif birth_date < 22:
-            zodiac = "scorpio"
+            zodiac = "Scorpio"
     elif birth_month == 12:
         if birth_date >= 21:
-            zodiac = "capricorn"
+            zodiac = "Capricorn"
         elif birth_date < 19:
-            zodiac = "sagittarius"
+            zodiac = "Sagittarius"
     #validation for inputting birthdates
     elif birth_month > 13 or birth_month < 1 or birth_date > 31 or birth_date < 1:
         print("\nError: invalid input, please try again")
@@ -116,7 +116,7 @@ def learn_more():
     #function to find out more about the zodiac signs
     print("Zodiac list:")
     print(zodiac_list)
-    answer = str(input("Which sign would you like to learn about?: "))
+    answer = str(input("\nWhich sign would you like to learn about?: "))
     #nested if/elif/else to select a sign using list index
     if answer == zodiac_list[0]:
         aries.info_dump()
@@ -157,7 +157,7 @@ def start_menu():
     print("2) Learn more about my zodiac sign")
     print("3) Quit")
     #functions called for selection
-    menu_choice = int(input("Please select a number: "))
+    menu_choice = int(input("\nPlease select a number: "))
     if menu_choice == 1:
         zodiac_checker()
     elif menu_choice == 2:
@@ -174,5 +174,6 @@ def continue_playing():
         start_menu()
     else:
         print("\nThanks for playing!")
+
 
 start_menu()
