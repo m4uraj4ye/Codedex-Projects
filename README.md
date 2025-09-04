@@ -10,4 +10,4 @@ Python projects:
 -Zodiac Library
 
 HTML projects:
--currently working on
+-currently working on a krusty krab menu
