@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                Krusty Krab restaurant menu
+            </title>
+        
+            <style> 
+                body {
+                    background-color: #6CC2D5
+                }
+                #menu {
+                    background-color: #80CCDF
+                }
+                #ordering-form {
+                    background-color: #80CCDF
+                }
+                @font-face {
+                    font-family: "krabbyPatty";
+                    src: url(krabby-patty-font/Krabbypatty-PKZAB.ttf)  
+                }
+                * { 
+                    font-family: "krabbyPatty";
+                    font-weight: lighter;
+                    color: #073579
+                }
+                #menu-name {
+                    font-size: large;
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <nav> 
+                    <h1>The Krusty Krab</h1>
+                         <ul>
+                        <li> Menu </li>
+                        <li> Order-Form </li>
+                    </ul>
+                <figure>
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.5T4CxAsaz8XLBtZ_FlYpYgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="a wideshot of the krusty krab establishment"
+                        width="300">
+                </figure>
+                </nav>
+            </header>
+            <main>
+                <section id="menu"> 
+                    <h2>Take a look at our menu:</h2>
+                        <img src="burger.webp" alt="krabby patty" width="100">
+                        <h3>Krabby Patty</h3>
+                        <p>Delicious, krabby, classic<i>  2.00</i></p>
+
+                        <img src="fries.jpg" alt="mountain of fries" width="100">
+                        <h3>Kelp Fries</h3>
+                        <p>Kelpy, crispy, delicious<i>  1.50</i></p>
+                        
+                        <img src="pizza.webp" alt="pizza in a takeaway box" width="100">
+                        <h3>Pizza</h3>  
+                        <p>A special addition, only serving for a limited time<i>  6.00</i></p>
+                        
+                        <img src="milkshake.webp" alt="a milkshake" width="100">
+                        <h3>Milkshake</h3>
+                        <p>All that and a cherry on top<i>  3.50</i></p>
+                        
+                        <img src="adult meal.webp" alt="burger fries and a drink" width="100">
+                        <h3>Krabby Patty Meal</h3>
+                        <p>Krusty Krab meal includes a Krabby Patty, Kelp fries, and Kelp drink<i>  3.00</i></p>
+                        
+                        <img src="kiddy-meal.webp" alt="a smaller krabby patty meal" width="100">
+                        <h3>Krabby kids meal</h3>      
+                        <p>A krusty krab meal for the kiddies, includes a toy <i>  2.75</i></p>       
+                </section>
+                <section id="ordering-form"> 
+                    <h2> Please order below</h2>
+                    <form>
+                        <input type="radio" required>Eat-in</input>
+                        <input type="radio" required>Takeaway</input>
+                        <br><br>
+                        <label id="menu-name"> Krabby Patty </label><label id="amount">select quantity: </label><input type="number" min="0" max="1000" required></input>
+                        <input type="radio">sea cheese</input>
+                        <input type="radio">pickles</input>
+                        <input type="radio">ketchup</input>
+                        <input type="radio">mustard</input>
+                        <br><br>
+                        <label id="menu-name"> Kelp Fries </label><label id="amount">select quantity: </label><input type="number" min="0" max="1000" required></input>
+                        <br><br>
+                        <label id="menu-name"> Pizza </label><label id="amount">select quantity: </label><input type="number" min="0" max="1000" required></input>
+                        <input type="radio">Plain</input>
+                        <input type="radio">Pepperoni</input>
+                        <input type="radio">Kelp Feast</input>
+                        <br><br>
+                        <label id="menu-name">Milkshake </label><label id="amount">select quantity: </label><input type="number" min="0" max="1000" required></input>
+                        <br><br>
+                        <label id="menu-name"> Krabby Patty Meal </label><label id="amount">select quantity: </label><input type="number" min="0" max="1000" required></input>
+                        <br><br>
+                        <label id="menu-name"> Krabby Kids Meal </label><label id="amount">select quantity: </label><input type="number" min="0" max="1000" required></input>
+                        <input type="radio"> book toy</input>
+                        <input type="radio"> active toy</input>
+                        <br><br>
+                        <textarea placeholder="Write any allergens, special requests here." max="300"></textarea>
+                        <br><br>
+                        <input type="submit" value="Go To Checkout"></input>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <figure>
+                    <img src="bob.gif" alt="gif of spongebob" width="300">
+                </figure> 
+                <li>Made with love by <a href="https://www.codedex.io/@l4dyBuug">l4dyBuug</a></li>
+                <li>Copyright 2025</li>
+                </ul>
+            </footer>
+        </body>
+    </html>
+
+<!-- TO DO LIST 
+    Add a gif 
+    Import krusty krab font
+    Find images for menu and header
+    Create form which matches menu
+-->
